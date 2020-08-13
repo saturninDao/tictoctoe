@@ -1,29 +1,10 @@
 // tictoctoe.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
 //
-#include <SFML\Graphics.hpp>
 #include <iostream>
-
 
 int main()
 {
-    //std::cout << "Hello World!\n";
-    sf::RenderWindow fenetre(sf::VideoMode(800, 600), "Astéroide");
-
-    while (fenetre.isOpen()) {
-        sf::Event event;
-
-        while (fenetre.pollEvent(event)) {
-            switch (event.type) {
-                case sf::Event::Closed:
-                    fenetre.close();
-                    break;
-            }
-        }
-
-        fenetre.clear();
-
-        fenetre.display();
-    }
+	return EXIT_SUCCESS;
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage

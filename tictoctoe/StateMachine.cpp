@@ -13,7 +13,7 @@ namespace Sonar {
 	}
 
 	void StateMachine::ProcessStateChanges() {
-		if (this->_isRemoving && !this_states.empty()) {
+		if (this->_isRemoving && !this->_states.empty()) {
 			this->_states.pop( );
 
 			if (!this->_states.empty( ) ) {
